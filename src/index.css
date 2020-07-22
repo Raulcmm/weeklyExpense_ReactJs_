@@ -1,10 +1,23 @@
 body {
   margin: 0;
-  background: linear-gradient(90deg, rgba(22,39,214,1) 0%, rgba(148,0,140,1) 99%);
-
+  background: linear-gradient(90deg, rgba(22, 39, 214, 1) 0%, rgba(148, 0, 140, 1) 99%);
+  color: #ffffff;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.card{
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 80%;
+}
+h2,h3,h4,h5,h6{
+color: #000000;
+}
+
+h2{
+  padding: 1rem;
 }
