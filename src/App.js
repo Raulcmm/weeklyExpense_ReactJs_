@@ -1,5 +1,5 @@
 import React from 'react'
-import SpendingForm from './components/SpendingForm'
+import BudgetForm from './components/BudgetForm'
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
 
       <div className="row">
         <div className="col">
-          <SpendingForm/>
+          <BudgetForm/>
         </div>
       </div>
     </div>
