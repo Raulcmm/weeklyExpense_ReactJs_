@@ -1,10 +1,9 @@
 import React from 'react';
 import useForm from '../hooks/useForm';
 
-const BudgetForm = ({ setBudget }) => {
+const BudgetForm = ({ setBudgetTotal }) => {
 	const initialState = {
 		budget: 0,
-		error: false
 	};
 	const { data, handleChange, setData } = useForm(initialState);
 
@@ -12,22 +11,21 @@ const BudgetForm = ({ setBudget }) => {
 		e.preventDefault();
 		if (data.budget <= 0) {
 			setData({
-				...data,
-				error: true
+				...data
 			});
 		} else {
-			setBudget(data.budget);
+			setBudgetTotal(+data.budget);
 		}
 	};
 
 	return (
-		<div className="card mt-5">
+		<div className=" mt-5">
 			<div className="card-body">
-				{data.error ? (
+				{/* {data.budget > 0 ? null : (
 					<div className="alert alert-danger" role="alert">
 						This is a danger alert—check it out!
 					</div>
-				) : null}
+				)} */}
 				<form onSubmit={handleSubmit}>
 					<div className="form-group">
 						<h2>Your budget </h2>
