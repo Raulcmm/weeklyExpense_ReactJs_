@@ -7,7 +7,6 @@ const useForm = (initalState = {}) => {
 		setData({
             ...data,
             [target.name]:target.value,
-            error:false
         })
     }
     
